@@ -7,6 +7,7 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,22 +17,22 @@
 <body>
   <header>
     <nav>
-      <a class="home" href="#">Home</a>
-      <a class="about" href="#">About</a>
-      <a class="portfolio" href="#">Portfolio</a>
-      <a class="contact" href="#">Contact</a>
+      <a class="home" href="#home">Home</a>
+      <a class="about" href="#about">About</a>
+      <a class="portfolio" href="#portfolio">Portfolio</a>
+      <a class="contact" href="#contact">Contact</a>
     </nav>
   </header>
   
-  <section class="intro">
+  <section class="intro" id="home">
     <img class="portrait" src="portrait.jpg">
     <h1>Tyler Thompson</h1>
     <p>
-      I am currently a full stack web development student studying to make beautiful and responsive websites for your business. Be sure to check out <a class="github-link" href="#">my GitHub</a> for my latest projects.
+      I am currently a full stack web development student studying to make beautiful and responsive websites for your business. Be sure to check out <a class="github-link" href="https://github.com/tthompson082">my GitHub</a> for my latest projects.
     </p>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="about">
     <h2 class>Skills</h2>
     <ul>
       <li>Responsive Web Design</li>
@@ -43,7 +44,7 @@
     </ul>
   </section>
 
-  <section class="work-experience">
+  <section class="work-experience" id="portfolio">
     <h2>Work Experience</h2>
     <ul>
       <li>
@@ -63,22 +64,22 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact</h2>
     
     <div>
       <a class="phone" href="#">(513) 368-3771</a>
-      <a class="email" href="#">tthompson082@gmail.com</a>
-      <a class="website" href="#">tthompson082.github.io</a>
+      <a class="email" href="mailto:tthompson082@gmail.com">tthompson082@gmail.com</a>
+      <a class="website" href="https://tthompson082.github.io/index.html">tthompson082.github.io</a>
     </div>
   </section>
 
   <footer>
     <nav>
-      <a class="home" href="#">Home</a>
-      <a class="about" href="#">About</a>
-      <a class="portfolio" href="#">Portfolio</a>
-      <a class="contact" href="#">Contact</a>
+      <a class="home" href="#home">Home</a>
+      <a class="about" href="#about">About</a>
+      <a class="portfolio" href="#portfolio">Portfolio</a>
+      <a class="contact" href="#contact">Contact</a>
     </nav>
   </footer>
 </body>

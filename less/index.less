@@ -61,11 +61,12 @@ html, body {
 @text-medium: 1.5rem;
 @text-large: 1.75rem;
 @text-huge: 2rem;
-@text-highlight-color: red;
-@text-secondary-color: darkgray;
+@text-highlight-color: khaki;
+@text-secondary-color: white;
 @text-body-color: black;
 
 body{
+	font-family: Montserrat;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -87,8 +88,25 @@ body{
 				text-decoration: underline;
 			}
 
+			animation-duration: 4s;
+			animation-name: slidein;
+			animation-iteration-count: 1;
+
+			@keyframes slidein {
+				from {
+					margin-right: 100%;
+					width: 300%;
+				}
+
+				to {
+					margin-right: 0%;
+					width: 100%;
+				}
+			}
+
 			@media(max-width: 500px) {
 				flex-direction: column;
+				align-items: center;
 			}
 		}
 	}
@@ -109,22 +127,36 @@ body{
 			color: @text-highlight-color;
 			font-size: @text-huge;
 			text-align: center;
+			animation-duration: 12s;
+			animation-name: fadein;
+			animation-iteration-count: 1;
+		}
+
+		@keyframes fadein {
+			from {opacity: 0;}
+			to {opacity: 1;}
 		}
 
 		p {
 
 			a {
-				text-decoration: none;
+				text-decoration: underline;
 				color: @text-body-color;
 			}
 
 			a:hover {
-				text-decoration: underline;
+				color: white;
+				background: black;
 			}
 
 			font-size: @text-small;
 			text-align: center;
 			margin-top: .5em;
+			line-height: 1.33em;
+
+			@media (max-width: 500px) {
+				max-width: 490px;
+			}
 		}
 	}
 
@@ -140,7 +172,7 @@ body{
 		ul {
 			font-size: @text-medium;
 			margin-top: 2em;
-			width: 75%;
+			width: 90%;
 			margin-left: auto;
 			margin-right: auto;
 			display: flex;
@@ -148,6 +180,7 @@ body{
 
 			@media (max-width:500px) {
 				flex-direction: column;
+				align-items: center;
 			}
 		}
 	}
@@ -191,7 +224,7 @@ body{
 		div {
 			.phone {
 				text-decoration: none;
-				color: @text-highlight-color;
+				color: black;
 				font-size: @text-medium;
 				margin-top: 2em;
 			}
@@ -207,6 +240,11 @@ body{
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			a:hover {
+				color: white;
+				background-color: black;
+			}
 		}
 	}
 
@@ -236,6 +274,33 @@ body{
 			}
 
 			margin-bottom: 1.5em;
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			animation-duration: 4s;
+			animation-name: slidein;
+			animation-iteration-count: 1;
+
+			@keyframes slidein {
+				from {
+					margin-left: 100%;
+					width: 300%;
+				}
+
+				to {
+					margin-left: 0%;
+					width: 100%;
+				}
+			}
+
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 	}
+
+	background: linear-gradient(to right, violet, chocolate);
 }

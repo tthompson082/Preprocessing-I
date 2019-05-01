@@ -136,7 +136,9 @@ body {
 }
 body {
   max-width: 1000px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
 }
 body header nav {
   display: flex;
@@ -149,6 +151,11 @@ body header nav a {
 }
 body header nav a:hover {
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  body header nav {
+    flex-direction: column;
+  }
 }
 body .intro .portrait {
   display: block;
@@ -167,6 +174,7 @@ body .intro h1 {
 body .intro p {
   font-size: 1.25rem;
   text-align: center;
+  margin-top: 0.5em;
 }
 body .intro p a {
   text-decoration: none;
@@ -174,4 +182,103 @@ body .intro p a {
 }
 body .intro p a:hover {
   text-decoration: underline;
+}
+body .skills {
+  margin-top: 2em;
+}
+body .skills h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  color: darkgray;
+}
+body .skills ul {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .skills ul {
+    flex-direction: column;
+  }
+}
+body .work-experience h2 {
+  font-size: 1.75rem;
+  color: darkgray;
+  text-align: center;
+  margin-top: 2em;
+}
+body .work-experience ul {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .work-experience ul li {
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .work-experience ul {
+    flex-direction: column;
+  }
+}
+body .contact h2 {
+  margin-top: 2em;
+  font-size: 1.75rem;
+  color: darkgray;
+  text-align: center;
+}
+body .contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contact div .phone {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body .contact div .email {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body .contact div .website {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body footer nav {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+body footer nav .home {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 1.5rem;
+}
+body footer nav .about {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 1.5rem;
+}
+body footer nav .portfolio {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 1.5rem;
+}
+body footer nav .contact {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 1.5rem;
 }

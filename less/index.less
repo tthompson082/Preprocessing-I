@@ -57,3 +57,67 @@ html, body {
 	height: 100%;
 }
 
+@text-small: 1.25rem;
+@text-medium: 1.5rem;
+@text-large: 1.75rem;
+@text-huge: 2rem;
+@text-highlight-color: red;
+@text-secondary-color: darkgray;
+@text-body-color: black;
+
+body{
+	max-width: 1000px;
+	margin: auto;
+	
+	header{
+		
+		nav{
+			display: flex;
+			justify-content: space-between;
+
+			a{
+				text-decoration: none;
+				color: @text-secondary-color;
+				font-size: @text-medium;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.intro {
+		
+		.portrait{
+			display: block;
+			margin-top: 1.5em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 15em;
+			height: 20em;
+		}
+
+		h1 {
+			margin-top: .5em;
+			color: @text-highlight-color;
+			font-size: @text-huge;
+			text-align: center;
+		}
+
+		p {
+
+			a {
+				text-decoration: none;
+				color: @text-body-color;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			font-size: @text-small;
+			text-align: center;
+		}
+	}
+}

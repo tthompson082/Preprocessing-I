@@ -1,1 +1,345 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Montserrat;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  background: linear-gradient(to right, violet, chocolate);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+body header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body header nav a:hover {
+  text-decoration: underline;
+}
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .intro .portrait {
+  display: block;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+  height: 20em;
+}
+body .intro h1 {
+  margin-top: 0.5em;
+  color: khaki;
+  font-size: 2rem;
+  text-align: center;
+  animation-duration: 12s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .intro p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 0.5em;
+  line-height: 1.33em;
+}
+body .intro p a {
+  text-decoration: underline;
+  color: black;
+}
+body .intro p a:hover {
+  color: white;
+  background: black;
+}
+@media (max-width: 500px) {
+  body .intro p {
+    max-width: 490px;
+  }
+}
+body .skills {
+  margin-top: 2em;
+}
+body .skills h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  color: white;
+}
+body .skills ul {
+  font-size: 1.5rem;
+  margin-top: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .work-experience h2 {
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+}
+body .work-experience ul {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .work-experience ul li {
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .work-experience ul {
+    flex-direction: column;
+  }
+}
+body .contact h2 {
+  margin-top: 2em;
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+}
+body .contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contact div .phone {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body .contact div .email {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body .contact div .website {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+body .contact div a:hover {
+  color: white;
+  background-color: black;
+}
+body footer nav {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+body footer nav .home {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body footer nav .about {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body footer nav .portfolio {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body footer nav .contact {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+body footer nav a:hover {
+  text-decoration: underline;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

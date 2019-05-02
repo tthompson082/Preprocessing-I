@@ -7,6 +7,7 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,72 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a class="home" href="#home">Home</a>
+      <a class="about" href="#about">About</a>
+      <a class="portfolio" href="#portfolio">Portfolio</a>
+      <a class="contact" href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="intro" id="home">
+    <img class="portrait" src="portrait.jpg">
+    <h1>Tyler Thompson</h1>
+    <p>
+      I am currently a full stack web development student studying to make beautiful and responsive websites for your business. Be sure to check out <a class="github-link" href="https://github.com/tthompson082" target="_blank">my GitHub</a> for my latest projects.
+    </p>
+  </section>
+
+  <section class="skills" id="about">
+    <h2 class>Skills</h2>
+    <ul>
+      <li>Responsive Web Design</li>
+      <li>Semanitc HTML</li>
+      <li>CSS</li>
+      <li>Less</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+    </ul>
+  </section>
+
+  <section class="work-experience" id="portfolio">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <div class="citi">
+          <p>2019 - 2019</p>
+          <p>Citi Bank</p>
+          <p>Digital Services <br>Representative</p>
+        </div>
+      </li>
+      <li>
+        <div class="staples">
+          <p>2017 - 2019</p>
+          <p>Staples</p>
+          <p>Certified Tech</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    
+    <div>
+      <a class="phone" href="#">(513) 368-3771</a>
+      <a class="email" href="mailto:tthompson082@gmail.com" target="_blank">tthompson082@gmail.com</a>
+      <a class="website" href="https://tthompson082.github.io/index.html" target="_blank">tthompson082.github.io</a>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a class="home" href="#home">Home</a>
+      <a class="about" href="#about">About</a>
+      <a class="portfolio" href="#portfolio">Portfolio</a>
+      <a class="contact" href="#contact">Contact</a>
+    </nav>
+  </footer>
 </body>
 </html>

@@ -54,6 +54,253 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+@text-small: 1.25rem;
+@text-medium: 1.5rem;
+@text-large: 1.75rem;
+@text-huge: 2rem;
+@text-highlight-color: khaki;
+@text-secondary-color: white;
+@text-body-color: black;
+
+body{
+	font-family: Montserrat;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+	background: linear-gradient(to right, violet, chocolate);
+	
+	header{
+		
+		nav{
+			display: flex;
+			justify-content: space-between;
+
+			a{
+				text-decoration: none;
+				color: @text-secondary-color;
+				font-size: @text-medium;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			animation-duration: 4s;
+			animation-name: slidein;
+			animation-iteration-count: 1;
+
+			@keyframes slidein {
+				from {
+					margin-right: 100%;
+					width: 300%;
+				}
+
+				to {
+					margin-right: 0%;
+					width: 100%;
+				}
+			}
+
+			@media(max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.intro {
+		
+		.portrait{
+			display: block;
+			margin-top: 1.5em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 15em;
+			height: 20em;
+		}
+
+		h1 {
+			margin-top: .5em;
+			color: @text-highlight-color;
+			font-size: @text-huge;
+			text-align: center;
+			animation-duration: 12s;
+			animation-name: fadein;
+			animation-iteration-count: 1;
+		}
+
+		@keyframes fadein {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+
+		p {
+
+			a {
+				text-decoration: underline;
+				color: @text-body-color;
+			}
+
+			a:hover {
+				color: white;
+				background: black;
+			}
+
+			font-size: @text-small;
+			text-align: center;
+			margin-top: .5em;
+			line-height: 1.33em;
+
+			@media (max-width: 500px) {
+				max-width: 490px;
+			}
+		}
+	}
+
+	.skills {
+		margin-top: 2em;
+
+		h2 {
+			font-size: @text-large;
+			text-align: center;
+			color: @text-secondary-color;
+		}
+
+		ul {
+			font-size: @text-medium;
+			margin-top: 2em;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width:500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.work-experience {
+
+		h2 {
+			font-size: @text-large;
+			color: @text-secondary-color;
+			text-align: center;
+			margin-top: 2em;
+		}
+
+		ul {
+			margin-top: 2em;
+			display: flex;
+			justify-content: space-around;
+			margin-right: auto;
+			margin-left: auto;
+
+			li {
+				text-align: center;
+				font-size: @text-medium;
+			}
+
+			@media(max-width: 500px){
+				flex-direction: column;
+			}
+		}
+	}
+
+	.contact {
+
+		h2 {
+			margin-top: 2em;
+			font-size: @text-large;
+			color: @text-secondary-color;
+			text-align: center;
+		}
+
+		div {
+			.phone {
+				text-decoration: none;
+				color: black;
+				font-size: @text-medium;
+				margin-top: 2em;
+			}
+
+			.email {
+				.phone;
+			}
+
+			.website {
+				.phone;
+			}
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			a:hover {
+				color: white;
+				background-color: black;
+			}
+		}
+	}
+
+	footer {
+		
+		nav {
+			margin-top: 2em;
+			display: flex;
+			justify-content: space-between;
+
+			.home {
+				text-decoration: none;
+				color: @text-secondary-color;
+				font-size: @text-medium;
+			}
+
+			.about {
+				.home;
+			}
+
+			.portfolio {
+				.home;
+			}
+
+			.contact {
+				.home;
+			}
+
+			margin-bottom: 1.5em;
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			animation-duration: 4s;
+			animation-name: slidein;
+			animation-iteration-count: 1;
+
+			@keyframes slidein {
+				from {
+					margin-left: 100%;
+					width: 300%;
+				}
+
+				to {
+					margin-left: 0%;
+					width: 100%;
+				}
+			}
+
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+}
